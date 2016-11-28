@@ -1,2 +1,2 @@
 # TechTerrors
-Point-and-click murder mystery game using Twine
+Point-and-click murder mystery game using Sugarcube
