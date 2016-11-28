@@ -83,7 +83,11 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 
 
 
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
 
 
 
@@ -112,7 +116,7 @@ You need to be honest with yourself in order to get through this&#39;&#39;
 
 </tw-passagedata>
 <tw-passagedata pid="6" name="Sounds good!" tags="Instructions" position="715,1169">&lt;&lt;set $clues to 0&gt;&gt;
-&#39;&#39;I have researched a  string of deaths regarding certain students attending Georgia Tech over the past few decades. Due to my lack of knowledge about this place, I haven&#39;t been able to get very far with the case...
+&#39;&#39;I have researched a  string of deaths regarding certain students attending Georgia Tech over the past few decades. Due to my lack of time, I haven&#39;t been able to get very far with the case...
 
 This is where you come in, [[detective]].
 
@@ -125,14 +129,15 @@ Remember to follow the rules, and best of luck.&#39;&#39;
 [[Look at Bag]]</tw-passagedata>
 <tw-passagedata pid="7" name="detective" tags="" position="907,988">&#39;&#39;You&#39;&#39; are the detective.
 
-//A young heroic, lively, good-looking chap with the exact mental aptitude needed for this case, and a propensity for reading long passages that serve to reveal information about certain people or things. No need to worry about getting through this case, cause you have the resources necessary.//
+//A young heroic, lively, good-looking chap with the exact mental aptitude needed for this case, and a propensity for reading long passages that serve to reveal information about certain people or things. No need to worry about getting stuck on this case, because you have the resources necessary.//
 
 &lt;&lt;back&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="8" name="Continue" tags="" position="714,1296">The sun is shining. 
+
 It&#39;s a cloudless November day in Atlanta.
 
 After hours of driving, you&#39;re finally close to exiting the interstate and making your way to Georgia Tech.
-&lt;&lt;set $condition to &quot;Courageous&quot;&gt;&gt; &lt;&lt;set $deaths to 0&gt;&gt;
+&lt;&lt;set $condition to &quot;courageous&quot;&gt;&gt; &lt;&lt;set $deaths to 0&gt;&gt;
 [[Take the exit]]
 [[Drive past the exit]]
 
@@ -148,7 +153,7 @@ You can just call me &quot;Bud.&quot;
 
 Just kidding, don&#39;t call me that.
 
-I&#39;m glad you&#39;ve decided to continue working for Butler Detective Agency once again. I&#39;m sure you&#39;ve done your homework, and now you&#39;re familiar with the case you&#39;re working on...&#39;&#39;
+Once again, I&#39;m glad you&#39;ve decided to continue working for Butler Detective Agency. I&#39;m sure you&#39;ve done your homework, and now you&#39;re familiar with the case you&#39;re working on...&#39;&#39;
 
 [[I know exactly what you&#39;re talking about!]]
 
@@ -159,7 +164,7 @@ I&#39;m glad you&#39;ve decided to continue working for Butler Detective Agency 
 <tw-passagedata pid="11" name="Sorry..." tags="" position="708,1012">Good!
 Let&#39;s go over some basic rules first.
 
-&#39;&#39;1. Don&#39;t think about lying, because that&#39;ll just hurt you more than help you.
+&#39;&#39;1. Don&#39;t think about cheating, because that&#39;ll just hurt you more than help you.
 
 2. Read and check everything before proceeding on to the next step. You might end up missing something important...
 
@@ -175,7 +180,7 @@ What will you look at first?
 [[Roger Geppell&#39;s Note]]
 [[Student Obituary Overview]]
 [[Current Campus Map]]
-&lt;&lt;set $condition to &quot;Studious&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;studious&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -190,7 +195,7 @@ As you frantically eye your GPS to recalculate the route, you don&#39;t notice t
 You run into the semi at full speed, killed on impact.
 
 You died.
-&lt;&lt;set $deaths to $deaths + 1&gt;&gt; &lt;&lt;set $condition to &quot;Dead..&quot;&gt;&gt;
+&lt;&lt;set $deaths to $deaths + 1&gt;&gt; &lt;&lt;set $condition to &quot;dead..&quot;&gt;&gt;
 [[Take the exit instead -&gt;Take the exit]] 
 
 Number of clues found: $clues
@@ -299,7 +304,8 @@ th, td {
   	&lt;td&gt;[[Ronald Yancey]]&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;/p&gt;
+//&#39;&#39;Note: The location of the murders are from the time of the murder itself, so the buildings may be called something else currently. You should probably find the current building names...&#39;&#39;//
+
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -309,11 +315,11 @@ You are feeling $condition
 [[Look at Bag]]
 &lt;&lt;if $clues == 16&gt;&gt;
 [img[https://s18.postimg.org/5t6p4jg15/White_Rabbit_Smaller.png][White Rabbit]]&lt;&lt;endif&gt;&gt;
-&lt;&lt;set $condition to &quot;Ambivalent&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;ambivalent&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition</tw-passagedata>
-<tw-passagedata pid="18" name="Larry C. Wyont" tags="" position="555,1957">&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+<tw-passagedata pid="18" name="Larry C. Wyont" tags="" position="556,1963">&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
 		  &lt;table&gt;
@@ -344,6 +350,7 @@ You are feeling $condition</tw-passagedata>
 &lt;/table&gt;
 
 [[Check Whitehead Memorial Infirmary]]
+[[Check Archive Letter -&gt;Check Larry C Wyont Archive Letter]]
 [[Go Back to Obituaries -&gt;Continue to see Obituary]]
 &lt;&lt;if !$firstLCW&gt;&gt;&lt;&lt;set $clues to $clues + 1&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;set $firstLCW to true&gt;&gt;&lt;&lt;set $condition to &quot;Contemplative&quot;&gt;&gt;
@@ -571,9 +578,9 @@ You are feeling $condition
 &lt;&lt;replace &quot;#click1&quot;&gt;&gt;Stored in Bag&lt;&lt;set $TW to true&gt;&gt;&lt;&lt;/replace&gt;&gt;
 &lt;&lt;/click&gt;&gt;&lt;/span&gt;
 [[Look at Bag]]</tw-passagedata>
-<tw-passagedata pid="24" name="Check Ceramics Engineering Building" tags="" position="410,2104">&lt;img src=&quot;https://s14.postimg.org/m379bthtd/Ceramics.png&quot; width=&quot;600&quot; height=&quot;450&quot;&gt;
+<tw-passagedata pid="24" name="Check Ceramics Engineering Building" tags="" position="410,2104">&lt;img src=&quot;https://s11.postimg.org/ngeptm0j7/Ceramics.png&quot; width=&quot;600&quot; height=&quot;300&quot;&gt;
 
-Note: End of WWII. Home of Writing and Communications.
+Current building: End of WWII. Home of Writing and Communications.
 
 [[Go Back to Ino Guenther Weiske-&gt;Ino Guenther Weiske]]
 [[Go Back to Obituaries -&gt;Continue to see Obituary]]
@@ -590,7 +597,7 @@ You are feeling $condition
 [[Look at Bag]]</tw-passagedata>
 <tw-passagedata pid="25" name="Check Whitehead Memorial Infirmary" tags="" position="554,2107">&lt;img src=&quot;https://s16.postimg.org/4eolnths5/WBI.png&quot;&gt;
 
-Note: Located in the Heart of Georgia Tech Campus. Kaneva, Internet Security Systems.
+Current building: Located in the Heart of Georgia Tech Campus. Kaneva, Internet Security Systems.
 
 [[Go Back to Larry C. Wyont-&gt;Larry C. Wyont]]
 [[Go Back to Obituaries -&gt;Continue to see Obituary]]
@@ -607,7 +614,7 @@ You are feeling $condition
 [[Look at Bag]]</tw-passagedata>
 <tw-passagedata pid="26" name="Check Aerospace Fluid Mechanics Laboratory" tags="" position="691,2107">&lt;img src=&quot;https://s13.postimg.org/gv2omg293/AFML.png&quot;&gt;
 
-Note: State of the art research facility. Study of combustion and fluid mechanical phenomena.
+Current building: State of the art research facility. Study of combustion and fluid mechanical phenomena.
 
 [[Go back to Sean Gregory -&gt;Sean Gregory]]
 [[Go Back to Obituaries -&gt;Continue to see Obituary]]
@@ -624,7 +631,7 @@ You are feeling $condition
 [[Look at Bag]]</tw-passagedata>
 <tw-passagedata pid="27" name="Check Wesco Building" tags="" position="827,2112">&lt;img src=&quot;https://s16.postimg.org/r551sqthh/Wescoe.png&quot;&gt;
 
-Note: 505 Tech Way N.W. Atlanta GA 30332.
+Current building: 505 Tech Way N.W. Atlanta GA 30332.
 
 [[Go back to Mary Sullivan -&gt;Mary Sullivan]]
 [[Go Back to Obituaries -&gt;Continue to see Obituary]]
@@ -641,7 +648,7 @@ You are feeling $condition
 [[Look at Bag]]</tw-passagedata>
 <tw-passagedata pid="28" name="Check Alexander Memorial Coliseum" tags="" position="973,2102">&lt;img src=&quot;https://s18.postimg.org/5yioflexl/Alexander_MC.png&quot;&gt;
 
-Note: Mark of a new era in Yellow Jackets&#39; basketball. Atlanta insurance executive Hank.
+Current building: Mark of a new era in Yellow Jackets&#39; basketball. Atlanta insurance executive Hank.
 
 [[Go back to Thomas Tournabene -&gt;Thomas Tournabene]]
 [[Go Back to Obituaries -&gt;Continue to see Obituary]]
@@ -658,7 +665,7 @@ You are feeling $condition
 [[Look at Bag]]</tw-passagedata>
 <tw-passagedata pid="29" name="Check Swann Residence Hall" tags="" position="1107,2098">&lt;img src=&quot;https://s21.postimg.org/8m1niu2jr/Swann.png&quot;&gt;
 
-Note: Originally the first dormitory on campus.  Georgia Tech’s international education initiatives.
+Current building: Originally the first dormitory on campus.  Georgia Tech’s international education initiatives.
 
 [[Go back to ‘Tip’ Wheeler -&gt;‘Tip’ Wheeler]]
 [[Go Back to Obituaries -&gt;Continue to see Obituary]]
@@ -918,7 +925,7 @@ You trip.
 You look back to see what you tripped on.
 It&#39;s an old journal of some sort.
 
-&lt;&lt;set $condition to &quot;Confused&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;confused&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -928,12 +935,12 @@ You are feeling $condition
 <tw-passagedata pid="46" name="Open Journal" tags="" position="729,2423">
 You have picked up the &quot;Mysterious Journal.&quot;
 
-&quot;Th s jou nal b l ngs to e rg . r l.
+&quot;Th s jou nal b l ngs to  e rg  .  ur  l .
 
 
 If fo nd, r turn im edia e y.&quot;
 
-&lt;&lt;set $condition to &quot;Puzzled&quot;&gt;&gt;&lt;&lt;if !$firstOJ&gt;&gt;&lt;&lt;set $clues to $clues + 1&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;set $condition to &quot;puzzled&quot;&gt;&gt;&lt;&lt;if !$firstOJ&gt;&gt;&lt;&lt;set $clues to $clues + 1&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;set $firstOJ to true&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
@@ -943,7 +950,7 @@ You are feeling $condition
 [[Look at Bag]]</tw-passagedata>
 <tw-passagedata pid="47" name="Flip Page" tags="" position="728,2559">The entries are written with jumbled letters. Nothing can be understood.
 
-&lt;&lt;set $condition to &quot;Perplexed&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;perplexed&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -955,7 +962,7 @@ You see many strange diagrams and symbols.
 You look closer.
 They are drawn in blood.
 
-&lt;&lt;set $condition to &quot;Sick&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;disgusted&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -966,19 +973,20 @@ You are feeling $condition
 There&#39;s a cipher of some sort...
 You can make out some sort of writing at the bottom of the page.
 
-^^En in er&#39;s B ok tor ^^
+^^En in  r&#39;s B ok  or 
+1954-2016^^
 
 Where should you go next? (case sensitive): &lt;&lt;textbox &quot;$place&quot; &quot;&quot; &quot;Where to go&quot;&gt;&gt;
 
 &lt;&lt;if !$firstFM&gt;&gt;&lt;&lt;set $clues to $clues + 1&gt;&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;set $firstFM to true&gt;&gt;&lt;&lt;set $condition to &quot;Nervous&quot;&gt;&gt;
+&lt;&lt;set $firstFM to true&gt;&gt;&lt;&lt;set $condition to &quot;nervous&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
 
 [[Look at Bag]]</tw-passagedata>
 <tw-passagedata pid="50" name="Where to go" tags="" position="728,2998">You walk to the $place, hoping you made the right choice...
-&lt;&lt;set $condition to &quot;Hopeful&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;hopeful&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -993,16 +1001,16 @@ Someone pushes you from behind, and you see a dark figure pointing a gun at you.
 
 You died.
 
-&lt;&lt;set $condition to &quot;Dead...&quot;&gt;&gt;&lt;&lt;set $deaths to $deaths + 1&gt;&gt;
+&lt;&lt;set $condition to &quot;dead...&quot;&gt;&gt;&lt;&lt;set $deaths to $deaths + 1&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
 
-[[Try again -&gt; Flip more]]</tw-passagedata>
-<tw-passagedata pid="52" name="Engineer&#39;s Bookstore" tags="" position="728,3148">The store seems to be abandoned, closed down for a while.
+[[Try again -&gt;Flip more]]</tw-passagedata>
+<tw-passagedata pid="52" name="Engineer&#39;s Bookstore" tags="" position="728,3148">The store seems to be abandoned, having been closed down for a while.
 
 The entrance seems to be blocked off.
-&lt;&lt;set $condition to &quot;Weary&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;weary&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1010,7 +1018,7 @@ You are feeling $condition
 [[Try the rooftop]]
 [[Try the back entrance]]</tw-passagedata>
 <tw-passagedata pid="53" name="Try the rooftop" tags="" position="601,3292">You walk on the rooftop, looking for a hatch of some sorts.
-
+&lt;&lt;set $condition to &quot;weary&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1018,7 +1026,7 @@ You are feeling $condition
 [[Search the wooden supports]]
 [[Search the chimney]]
 [[Go back down -&gt;Engineer&#39;s Bookstore]]</tw-passagedata>
-<tw-passagedata pid="54" name="Try the back entrance" tags="" position="835,3295">There seems to be some windows, but none are big enough for you to fit through.
+<tw-passagedata pid="54" name="Try the back entrance" tags="" position="835,3296">There seems to be some windows, but none are big enough for you to fit through.
 
 There&#39;s a backdoor, but it&#39;s covered with nuerous wooden planks.
 Doesn&#39;t seem like there&#39;s a way in from here.
@@ -1034,7 +1042,7 @@ The wooden planks give way, and you crash onto the floor 20 feet below. You must
 
 As you lay on the ground, your consciousness slowly drains away.
 You are dead.
-&lt;&lt;set $condition to &quot;Dead...&quot;&gt;&gt;&lt;&lt;set $deaths to $deaths + 1&gt;&gt;
+&lt;&lt;set $condition to &quot;dead...&quot;&gt;&gt;&lt;&lt;set $deaths to $deaths + 1&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1054,7 +1062,7 @@ It is pitch black inside.
 You finally feel your feet hit some sort of platform, and you drop down, landing on it.
 
 The fireplace leading to the chimney has been sealed off...
-&lt;&lt;set $condition to &quot;Dusty&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;dusty&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1063,7 +1071,7 @@ You are feeling $condition
 <tw-passagedata pid="58" name="Climb back up" tags="" position="720,3755">As you climb up, your foot hits a button on the side of the chimney, and you hear the sound of grating metal.
 
 A hatch has covered your only way out.
-&lt;&lt;set $condition to &quot;Hopeful&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;hopeful&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1074,7 +1082,7 @@ You are feeling $condition
 Your foot hurts.
 
 As minutes pass you find it harder and harder to breathe.
-&lt;&lt;set $condition to &quot;Panicked&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;panicked&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1082,7 +1090,7 @@ You are feeling $condition
 [[Keep trying]]</tw-passagedata>
 <tw-passagedata pid="60" name="Keep trying" tags="" position="722,4051">You kick out again. Still no luck.
 By now you can no longer breathe, and spots begin to swim before your eyes.
-&lt;&lt;set $condition to &quot;Near death&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;half-conscious&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1093,7 +1101,7 @@ You are feeling $condition
 Within minutes you black out, suffocating.
 
 You are dead.
-&lt;&lt;set $condition to &quot;Dead...&quot;&gt;&gt;&lt;&lt;set $deaths to $deaths + 1&gt;&gt;
+&lt;&lt;set $condition to &quot;dead...&quot;&gt;&gt;&lt;&lt;set $deaths to $deaths + 1&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1106,7 +1114,7 @@ Instead of stopping, your foot this time breaks through the wall! and you feel t
 A blast of fresh air makes its way into your lungs, and you regain full consciousness.
 
 However you fall through the fireplace, cutting yourself in numerous places. You hear a crack.
-&lt;&lt;set $condition to &quot;Relieved and Exhausted&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;relieved and exhausted&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1116,7 +1124,7 @@ You are feeling $condition
 The crack you heard must&#39;ve been from your ankle...
 
 Any movement stings...
-&lt;&lt;set $condition to &quot;Injured&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;injured&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1128,7 +1136,7 @@ You are feeling $condition
 The wall behind you collapses from the damaged chimney supports; you have barely escaped death.
 
 Now to explore the bookstore...
-&lt;&lt;set $condition to &quot;Hurt&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;hurt&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1141,7 +1149,7 @@ You are feeling $condition
 THe rubble falls directly onto you, and you are crushed under the immense weight of bricks.
 
 You are dead.
-&lt;&lt;set $condition to &quot;Dead...&quot;&gt;&gt;&lt;&lt;set $deaths to $deaths + 1&gt;&gt;
+&lt;&lt;set $condition to &quot;dead...&quot;&gt;&gt;&lt;&lt;set $deaths to $deaths + 1&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1172,7 +1180,7 @@ You are feeling $condition
 However you come across one desk that has symbols half-heartedly engraved onto it.
 
 Those symbols seem familiar...
-&lt;&lt;set $condition to &quot;Contemplative&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;contemplative&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1191,7 +1199,7 @@ You are feeling $condition
 
 The symbols drawn the in journal match perfectly with the ones on the desk!
 Could this be the hideout of the murderer?
-&lt;&lt;set $condition to &quot;Surprised&quot;&gt;&gt;&lt;&lt;set $clues to $clues + 1&gt;&gt;
+&lt;&lt;set $condition to &quot;surprised&quot;&gt;&gt;&lt;&lt;set $clues to $clues + 1&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1201,7 +1209,7 @@ You are feeling $condition
 <tw-passagedata pid="71" name="Open the Desk Drawers" tags="" position="981,5200">//&#39;&#39;Somewhere in the distance, humming is heard&#39;&#39;//
 
 You find a stack of papers.
-&lt;&lt;set $condition to &quot;Hurried&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;hurried&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1215,11 +1223,12 @@ You are feeling $condition
 
 [[Check Magazines]]
 [[Check Pictures]]
-[[Check Letter]]</tw-passagedata>
+[[Check Letter]]
+[[Quit]]</tw-passagedata>
 <tw-passagedata pid="73" name="Check Magazines" tags="" position="982,5489">It&#39;s a huge stack of ripped up //Time// magazines from past years.
 
 Flipping through it, you don&#39;t notice anything different about the contents...
-&lt;&lt;set $condition to &quot;Frantic&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;frantic&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1229,7 +1238,7 @@ You are feeling $condition
 <tw-passagedata pid="74" name="Check Pictures" tags="" position="1132,5489">It&#39;s a bunch of blurry picture of the murders. You recognize the faces of the murder victims.
 
 There are shivers down your spine as you realize the pictures were taken right after those people were murdered.
-&lt;&lt;set $condition to &quot;Scared&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;horrified&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1255,16 +1264,16 @@ You are feeling $condition
 [[Read Cipher]]</tw-passagedata>
 <tw-passagedata pid="76" name="Read Cipher" tags="" position="1280,5601">//&#39;&#39;Someone is banging on in the door&#39;&#39;//
 
-Your heart is beating rapidly
+Your heart is beating rapidly.
 
-&#39;&#39;CIPHER&#39;&#39;
+&#39;&#39;Keyword&#39;&#39;
 Look at the case box you have with you.
 There are letters at the top of each one.
 Rearrange them.
 
-Victim first, then location.
-
-INPUT KEYWORD HERE (numbers only, separate each number with a space): &lt;&lt;textbox &quot;$password&quot; &quot;&quot; &quot;Password Check&quot;&gt;&gt;
+&#39;&#39;Passcode&#39;&#39;
+The building numbers! Order them.
+INPUT PASSCODE HERE (numbers only, separate each number with a space): &lt;&lt;textbox &quot;$password&quot; &quot;&quot; &quot;Password Check&quot;&gt;&gt;
 
 &lt;&lt;if !$firstFM&gt;&gt;&lt;&lt;set $clues to $clues + 1&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;set $firstFM to true&gt;&gt;&lt;&lt;set $condition to &quot;Desparate&quot;&gt;&gt;
@@ -1300,7 +1309,7 @@ Number of deaths: $deaths
 You are feeling $condition
 
 [[Turn Around]]</tw-passagedata>
-<tw-passagedata pid="80" name="Turn Around" tags="" position="1283,6242">George P Burdell, or the man you knew as Roger Bud Geppel, is there.
+<tw-passagedata pid="80" name="Turn Around" tags="" position="1283,6242">The man you knew as Roger Bud Gepell is there.
 
 He is smiling sinisterly.
 
@@ -1310,10 +1319,10 @@ He fires.
 
 You feel a searing pain erupt from your stomach, and you fall to the ground, screaming.
 
-George Burdell walks a few steps away, presses the button, and continues to walk away until he disappears into the darkness.
+Gepell walks a few steps away, presses the button, and continues to walk away until he disappears into the darkness.
 
 You hear an electronic whirring over your head.
-&lt;&lt;set $condition to &quot;Confused&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;confused&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1324,13 +1333,17 @@ You are feeling $condition
 You frantically try to crawl out of the room, but you are in too much pain to do so.
 
 The walls get closer and closer.
-&lt;&lt;set $condition to &quot;Petrified&quot;&gt;&gt;
+
+
+//Before you die, you bite down on your hand, dripping blood on the ground. With the last of your energy, you write down the name of the murderer with the blood://
+&lt;&lt;textbox &quot;$murderer&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;petrified&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
 
 [[There is no way out]]</tw-passagedata>
-<tw-passagedata pid="82" name="There is no way out" tags="" position="1282,6559">When the electronic whirring stops, George Burdell turns around to look back, the walls have completely shut together.
+<tw-passagedata pid="82" name="There is no way out" tags="" position="1282,6559">When the electronic whirring stops, Gepell turns around to look back, the walls have completely shut together.
 
 In a few minutes, they will open back up again, revealing a compressed, bloody mass. Authorities will be perplexed, unable to solve it.
 
@@ -1346,8 +1359,8 @@ Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
 
-[[The End.]]</tw-passagedata>
-<tw-passagedata pid="83" name="The End." tags="" position="1281,6711">&lt;style&gt;
+&lt;&lt;if $murderer == &quot;George P Burdell&quot;||$murderer == &quot;George P. Burdell&quot;||$murderer == &quot;Roger Gepell&quot;&gt;&gt;[[The End. -&gt;Good The End]]&lt;&lt;else&gt;&gt;[[The End. -&gt;Bad The End]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="83" name="Hello." tags="" position="1110,6835">&lt;style&gt;
 table, td, th {
     border: 1px solid #800000;
     text-align: left;
@@ -1399,12 +1412,12 @@ Number of deaths: $deaths
 You are feeling $condition</tw-passagedata>
 <tw-passagedata pid="84" name="Password Check" tags="" position="1282,5726">You hear a //click//. The password seems to be right!
 
-&lt;&lt;set $condition to &quot;Hopeful&quot;&gt;&gt;
+&lt;&lt;set $condition to &quot;hopeful&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
 
-&lt;&lt;if $password == &quot;39 59 114 136 151 177&quot;&gt;&gt;[[Push the door -&gt;password right]]&lt;&lt;else&gt;&gt;[[Push the door -&gt;password wrong]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
+&lt;&lt;if $password == &quot;39 59 73 114 136 151 177&quot;&gt;&gt;[[Push the door -&gt;password right]]&lt;&lt;else&gt;&gt;[[Push the door -&gt;password wrong]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="85" name="password wrong" tags="" position="1203,5851">//&#39;&#39;The banging continues&#39;&#39;//
 
 The door doesn&#39;t budge. The password must be wrong.
@@ -1412,7 +1425,7 @@ The door doesn&#39;t budge. The password must be wrong.
 Before you can turn around, you feel a sharp pain in your abdomen. You look down and see a knife is sticking out of you.
 
 You are dead.
-&lt;&lt;set $condition to &quot;Dead...&quot;&gt;&gt;&lt;&lt;set $deaths to $deaths + 1&gt;&gt;
+&lt;&lt;set $condition to &quot;dead...&quot;&gt;&gt;&lt;&lt;set $deaths to $deaths + 1&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
@@ -1448,7 +1461,7 @@ You are feeling $condition
 	&lt;/tr&gt;
 &lt;/table&gt;
 
-&lt;&lt;back&gt;&gt;</tw-passagedata>
+[[I hope you enjoyed the game!]]</tw-passagedata>
 <tw-passagedata pid="87" name="Ronald Yancey" tags="" position="276,1957">&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
@@ -1480,6 +1493,7 @@ You are feeling $condition
 &lt;/table&gt;
 
 [[Check Houston Bookstore]]
+[[Check Archive Letter -&gt;Ronald Yancey Archive Letter]]
 [[Go Back to Obituaries -&gt;Continue to see Obituary]]
 &lt;&lt;if !$firstRY&gt;&gt;&lt;&lt;set $clues to $clues + 1&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;set $firstRY to true&gt;&gt;&lt;&lt;set $condition to &quot;Contemplative&quot;&gt;&gt;
@@ -1492,9 +1506,9 @@ You are feeling $condition
 &lt;&lt;replace &quot;#click1&quot;&gt;&gt;Stored in Bag&lt;&lt;set $RY to true&gt;&gt;&lt;&lt;/replace&gt;&gt;
 &lt;&lt;/click&gt;&gt;&lt;/span&gt;
 [[Look at Bag]]</tw-passagedata>
-<tw-passagedata pid="88" name="Check Houston Bookstore" tags="" position="276,2107">&lt;img src=&quot;https://s21.postimg.org/dq1f5rxyv/Houston.png&quot;&gt;
+<tw-passagedata pid="88" name="Check Houston Bookstore" tags="" position="276,2110">&lt;img src=&quot;https://s21.postimg.org/dq1f5rxyv/Houston.png&quot;&gt;
 
-Note: Twenty-four hours a day. Provides the Georgia Tech community a space for entertainment, performances, study lounges, and Student Government offices.
+Current building: Twenty-four hours a day. Provides the Georgia Tech community a space for entertainment, performances, study lounges, and Student Government offices.
 
 [[Go Back to Ronald Yancey-&gt;Ronald Yancey]]
 [[Go Back to Obituaries -&gt;Continue to see Obituary]]
@@ -1540,11 +1554,57 @@ You are feeling $condition
 &lt;/table&gt;
 
 &lt;&lt;back&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="90" name="Houston Bookstore" tags="" position="277.0001,1551">&lt;img src=&quot;https://s21.postimg.org/dq1f5rxyv/Houston.png&quot;&gt;
+<tw-passagedata pid="90" name="Houston Bookstore" tags="" position="277,1551">&lt;img src=&quot;https://s21.postimg.org/dq1f5rxyv/Houston.png&quot;&gt;
 
 Note: Twenty-four hours a day. Provides the Georgia Tech community a space for entertainment, performances, study lounges, and Student Government offices.
 
 &lt;&lt;back&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="91" name="Ronald Yancey Archive Letter" tags="" position="151,2107">&lt;img src=&quot;https://s12.postimg.org/hyl0nefz1/Black_Letter.png&quot; width=&quot;700&quot; height=&quot;750&quot;&gt;
+
+Hmm...Perhaps it&#39;s related to the murder?
+
+&lt;&lt;back&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="92" name="Check Larry C Wyont Archive Letter" tags="" position="216,2261">&lt;img src=&quot;https://s16.postimg.org/6io0jys9h/City_Of_Atlanta1.png&quot; width=&quot;700&quot; height=&quot;900&quot;&gt;
+&lt;img src=&quot;https://s22.postimg.org/4l32ost81/City_Of_Atlanta2.png&quot; width=&quot;700&quot; height=&quot;900&quot;&gt;
+
+Hmm...Perhaps it&#39;s related to the murder?
+
+&lt;&lt;back&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="93" name="I hope you enjoyed the game!" tags="" position="1277,7004">&lt;center&gt;__Credits__&lt;/center&gt;
+&lt;center&gt;Game Creators:&lt;/center&gt;
+&lt;center&gt;&#39;&#39;Eddy Chiao&#39;&#39;
+&#39;&#39;Rebecca Entrekin&#39;&#39;
+&#39;&#39;Nicole Oh&#39;&#39;
+&#39;&#39;Hamilton Payne&#39;&#39;
+&#39;&#39;Deepti Veludhandi&#39;&#39;&lt;/center&gt;
+</tw-passagedata>
+<tw-passagedata pid="94" name="Quit" tags="" position="781,5396">Quitting is not an option.
+
+It is never an option.
+
+&lt;&lt;back&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="95" name="Good The End" tags="" position="1235,6712">Weeks pass.
+
+Authorities discover a compressed body from a hidden chamber within the Engineer&#39;s Booktstore.
+
+Next to the body, there seems to be a clue scrawled on the floor:
+
+&quot;George P. Burdell&quot;
+
+After years of investigation, the police agency decide to send a detective to investigate a suspicious Butler Detective Agency...
+
+The detective finds the agency deserted, only a file case and a mysterious journal left behind...
+
+[[Hello.]] </tw-passagedata>
+<tw-passagedata pid="96" name="Bad The End" tags="" position="1384,6712">Weeks pass.
+
+The news of a missing detective spreads throughout the country, and soon a new daring young sleuth decides to tackle the case.
+
+The cab pulls up to the destination, and the detective-to-be steps out of the car. 
+
+First day on the job at Butler Detective Agency.
+
+[[Hello.]] </tw-passagedata>
 </tw-storydata>
 </div>
 	<script id="script-sugarcube" type="text/javascript">
