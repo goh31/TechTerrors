@@ -85,7 +85,9 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -313,7 +315,7 @@ You are feeling $condition
 [[Look at Student Obituary Overview -&gt;Student Obituary Overview]] 
 
 [[Look at Bag]]
-&lt;&lt;if $clues == 16&gt;&gt;
+&lt;&lt;if $clues == 18&gt;&gt;
 [img[https://s18.postimg.org/5t6p4jg15/White_Rabbit_Smaller.png][White Rabbit]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;set $condition to &quot;ambivalent&quot;&gt;&gt;
 Number of clues found: $clues
@@ -681,7 +683,7 @@ You are feeling $condition
 &lt;&lt;/click&gt;&gt;&lt;/span&gt;
 [[Look at Bag]]</tw-passagedata>
 <tw-passagedata pid="30" name="Look at Bag" tags="" position="314,1230">Number of clues found: $clues
-&lt;&lt;if $clues == 0&gt;&gt;Your bag is empty!&lt;&lt;endif&gt;&gt;&lt;&lt;if $RGNote&gt;&gt;&lt;br&gt;[[Note of Roger Geppell]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $CCM&gt;&gt;&lt;br&gt;[[Current Georgia Tech Campus Map]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $IGW&gt;&gt;&lt;br&gt;[[Student Obituaries: Ino Guenther Weiske]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $LCW&gt;&gt;&lt;br&gt;[[Student Obituaries: Larry C. Wyont]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $SG&gt;&gt;&lt;br&gt;[[Student Obituaries: Sean Gregory]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $SG&gt;&gt;&lt;br&gt;[[Student Obituaries: Mary Sullivan]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $TT&gt;&gt;&lt;br&gt;[[Student Obituaries: Thomas Tournabene]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $TW&gt;&gt;&lt;br&gt;[[Student Obituaries: ‘Tip’ Wheeler]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $RY&gt;&gt;&lt;br&gt;[[Student Obituaries: Ronald Yancey]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $CEB&gt;&gt;&lt;br&gt;[[Ceramics Engineering Building]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $WMI&gt;&gt;&lt;br&gt;[[Whitehead Memorial Infirmary]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $AMC&gt;&gt;&lt;br&gt;[[Alexander Memorial Coliseum]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $AFML&gt;&gt;&lt;br&gt;[[Aerospace Fluid Mechanics Laboratory]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $WB&gt;&gt;&lt;br&gt;[[Wesco Building]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $SRH&gt;&gt;&lt;br&gt;[[Swann Residence Hall]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $CHB&gt;&gt;&lt;br&gt;[[Houston Bookstore]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $clues == 0&gt;&gt;Your bag is empty!&lt;&lt;endif&gt;&gt;&lt;&lt;if $RGNote&gt;&gt;&lt;br&gt;[[Note of Roger Geppell]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $CCM&gt;&gt;&lt;br&gt;[[Current Georgia Tech Campus Map]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $IGW&gt;&gt;&lt;br&gt;[[Student Obituaries: Ino Guenther Weiske]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $LCW&gt;&gt;&lt;br&gt;[[Student Obituaries: Larry C. Wyont]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $SG&gt;&gt;&lt;br&gt;[[Student Obituaries: Sean Gregory]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $SG&gt;&gt;&lt;br&gt;[[Student Obituaries: Mary Sullivan]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $TT&gt;&gt;&lt;br&gt;[[Student Obituaries: Thomas Tournabene]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $TW&gt;&gt;&lt;br&gt;[[Student Obituaries: ‘Tip’ Wheeler]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $RY&gt;&gt;&lt;br&gt;[[Student Obituaries: Ronald Yancey]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $CEB&gt;&gt;&lt;br&gt;[[Ceramics Engineering Building]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $WMI&gt;&gt;&lt;br&gt;[[Whitehead Memorial Infirmary]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $AMC&gt;&gt;&lt;br&gt;[[Alexander Memorial Coliseum]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $AFML&gt;&gt;&lt;br&gt;[[Aerospace Fluid Mechanics Laboratory]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $WB&gt;&gt;&lt;br&gt;[[Wesco Building]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $SRH&gt;&gt;&lt;br&gt;[[Swann Residence Hall]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $CHB&gt;&gt;&lt;br&gt;[[Houston Bookstore]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $RYAL&gt;&gt;&lt;br&gt;[[Letters: Ronald Yancey Archive Letter]]&lt;&lt;endif&gt;&gt;&lt;&lt;if $RYAL&gt;&gt;&lt;br&gt;[[Letters: Larry C Wyont Archive Letter]]&lt;&lt;endif&gt;&gt;
 
 &lt;&lt;return&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="31" name="Note of Roger Geppell" tags="" position="152,1379">As you can see around you, you are at Georgia Tech, one of the most prestigious technological institutes in the country. Georgia Tech and I share a long history together, so it is my wish that you will make the most of exploring the campus.
@@ -1563,13 +1565,37 @@ Note: Twenty-four hours a day. Provides the Georgia Tech community a space for e
 
 Hmm...Perhaps it&#39;s related to the murder?
 
-&lt;&lt;back&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="92" name="Check Larry C Wyont Archive Letter" tags="" position="216,2261">&lt;img src=&quot;https://s16.postimg.org/6io0jys9h/City_Of_Atlanta1.png&quot; width=&quot;700&quot; height=&quot;900&quot;&gt;
+[[Go Back to Ronald Yancey-&gt;Ronald Yancey]]
+[[Go Back to Obituaries -&gt;Continue to see Obituary]]
+&lt;&lt;if !$firstRYAL&gt;&gt;&lt;&lt;set $clues to $clues + 1&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;set $firstRYAL to true&gt;&gt;
+Number of clues found: $clues
+Number of deaths: $deaths
+You are feeling $condition
+
+&lt;span id=&quot;click1&quot;&gt;
+&lt;&lt;click &quot;Store in Bag&quot;&gt;&gt;
+&lt;&lt;replace &quot;#click1&quot;&gt;&gt;Stored in Bag&lt;&lt;set $RYAL to true&gt;&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/click&gt;&gt;&lt;/span&gt;
+[[Look at Bag]] </tw-passagedata>
+<tw-passagedata pid="92" name="Check Larry C Wyont Archive Letter" tags="" position="213,2263">&lt;img src=&quot;https://s16.postimg.org/6io0jys9h/City_Of_Atlanta1.png&quot; width=&quot;700&quot; height=&quot;900&quot;&gt;
 &lt;img src=&quot;https://s22.postimg.org/4l32ost81/City_Of_Atlanta2.png&quot; width=&quot;700&quot; height=&quot;900&quot;&gt;
 
 Hmm...Perhaps it&#39;s related to the murder?
 
-&lt;&lt;back&gt;&gt;</tw-passagedata>
+[[Go Back to Larry C. Wyont-&gt;Larry C. Wyont]]
+[[Go Back to Obituaries -&gt;Continue to see Obituary]]
+&lt;&lt;if !$firstLCWAL&gt;&gt;&lt;&lt;set $clues to $clues + 1&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;set $firstLCWAL to true&gt;&gt;
+Number of clues found: $clues
+Number of deaths: $deaths
+You are feeling $condition
+
+&lt;span id=&quot;click1&quot;&gt;
+&lt;&lt;click &quot;Store in Bag&quot;&gt;&gt;
+&lt;&lt;replace &quot;#click1&quot;&gt;&gt;Stored in Bag&lt;&lt;set $LCWAL to true&gt;&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/click&gt;&gt;&lt;/span&gt;
+[[Look at Bag]] </tw-passagedata>
 <tw-passagedata pid="93" name="I hope you enjoyed the game!" tags="" position="1277,7004">&lt;center&gt;__Credits__
 Game Creators:&lt;/center&gt;
 &lt;center&gt;&#39;&#39;Eddy Chiao&#39;&#39;
@@ -1604,6 +1630,17 @@ The cab pulls up to the destination, and the detective-to-be steps out of the ca
 First day on the job at Butler Detective Agency.
 
 [[Hello.]] </tw-passagedata>
+<tw-passagedata pid="97" name="Letters: Ronald Yancey Archive Letter" tags="" position="83,1656">&lt;img src=&quot;https://s12.postimg.org/hyl0nefz1/Black_Letter.png&quot; width=&quot;700&quot; height=&quot;750&quot;&gt;
+
+Hmm...Perhaps it&#39;s related to the murder?
+
+&lt;&lt;back&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="98" name="Letters: Larry C Wyont Archive Letter" tags="" position="225,1685">&lt;img src=&quot;https://s16.postimg.org/6io0jys9h/City_Of_Atlanta1.png&quot; width=&quot;700&quot; height=&quot;900&quot;&gt;
+&lt;img src=&quot;https://s22.postimg.org/4l32ost81/City_Of_Atlanta2.png&quot; width=&quot;700&quot; height=&quot;900&quot;&gt;
+
+Hmm...Perhaps it&#39;s related to the murder?
+
+&lt;&lt;back&gt;&gt;</tw-passagedata>
 </tw-storydata>
 </div>
 	<script id="script-sugarcube" type="text/javascript">
