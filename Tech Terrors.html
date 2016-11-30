@@ -86,7 +86,9 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -1338,13 +1340,11 @@ The walls get closer and closer.
 
 
 //Before you die, you bite down on your hand, dripping blood on the ground. With the last of your energy, you write down the name of the murderer with the blood://
-&lt;&lt;textbox &quot;$murderer&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;textbox &quot;$murderer&quot; &quot;&quot; &quot;There is no way out&quot;&gt;&gt;
 &lt;&lt;set $condition to &quot;petrified&quot;&gt;&gt;
 Number of clues found: $clues
 Number of deaths: $deaths
-You are feeling $condition
-
-[[There is no way out]]</tw-passagedata>
+You are feeling $condition</tw-passagedata>
 <tw-passagedata pid="82" name="There is no way out" tags="" position="1282,6559">When the electronic whirring stops, Gepell turns around to look back, the walls have completely shut together.
 
 In a few minutes, they will open back up again, revealing a compressed, bloody mass. Authorities will be perplexed, unable to solve it.
@@ -1361,7 +1361,7 @@ Number of clues found: $clues
 Number of deaths: $deaths
 You are feeling $condition
 
-&lt;&lt;if $murderer == &quot;George P Burdell&quot;||$murderer == &quot;George P. Burdell&quot;||$murderer == &quot;Roger Gepell&quot;&gt;&gt;[[The End. -&gt;Good The End]]&lt;&lt;else&gt;&gt;[[The End. -&gt;Bad The End]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
+&lt;&lt;if $murderer == &quot;George P Burdell&quot;||$murderer == &quot;George P. Burdell&quot;||$murderer == &quot;Roger Bud Gepell&quot;&gt;&gt;[[The End. -&gt;Good The End]]&lt;&lt;else&gt;&gt;[[The End. -&gt;Bad The End]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="83" name="Hello." tags="" position="1110,6835">&lt;style&gt;
 table, td, th {
     border: 1px solid #800000;
@@ -1614,7 +1614,7 @@ Authorities discover a compressed body from a hidden chamber within the Engineer
 
 Next to the body, there seems to be a clue scrawled on the floor:
 
-&quot;George P. Burdell&quot;
+&quot;$murderer&quot;
 
 After years of investigation, the police agency decide to send a detective to investigate a suspicious Butler Detective Agency...
 
